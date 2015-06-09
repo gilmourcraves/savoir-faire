@@ -1,92 +1,609 @@
-/* bootstrap overrides*/
+/* bootstrap overrides */
 
-body {
-    font-family: verdana, arial, helvetica, sans-serif;
-    color: #231f20;
-    background-color: #f4f5f0;
-    font-size: 12px;
+.row-5 .row {
+  margin-bottom: 20px;
 }
 
-.container {
-    background-color: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
+/* base style overrides */
+
+h2.available {
+    padding: 65px 0;
 }
 
-p, li {
-    line-height: 2;
+h3.features {
+    padding: 26px 0;
 }
 
-h2 {
-    font-family: "Georgia", serif;
-    margin-top: 0;
-    padding-top: 0;
+.white {
+    color: #fff;
 }
 
-ul {
-    margin: 0 0 0 0;
-    padding: 0;
+.medium {
+    font-size: 14px !important;
+}
+
+ul.arrow-red {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-li {
-    background: transparent url('../images/bullet-black.gif') 0 8px no-repeat;
-    padding: 0 0 0 10px;
+ul.arrow-red li {
+    margin: 0;
+    padding: 0 0 10px 16px;
+    background: url('../images/arrow-red.png')  no-repeat 0 4px;
 }
+
+#button-swatches  {
+    margin: 20px 15px;
+    cursor: pointer;
+}
+
+#button-swatches img {
+    float: left;
+}
+
+.button-swatches-text {
+    float:left;
+    padding: 6px 10px;
+}
+
+.buttons-down-below {
+    padding: 60px 0;
+}
+
+.button-simple {
+    border: 1px solid #707070;
+    color: #707070;
+    max-width: 262px;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.button-simple:hover {
+    border: 1px solid #707070;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+
+}
+
+.button-simple-left {
+    float: right;
+}
+
+.social {
+    color: #fff;
+    text-align: right;
+}
+
+.social .fa {
+    border: 1px solid #555;
+    border-radius: 3px;
+    margin: 0 5px;
+    padding: 5px;
+    width: 40px;
+    text-align:center;
+}
+
+.social .fa:hover {
+    cursor: pointer;
+    border: 1px solid #777;
+/*    color: #e40101;*/
+
+}
+
+#container-swatches {
+    clear: both;
+    float:none;
+    margin: 20px 0;
+    padding: 40px 20px;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+#container-swatches .row div {
+ margin-bottom:  20px;
+}
+
+#container-swatches .row-header {
+    margin-bottom:  10px;
+}
+
+/*swatches*/
+
+.swatch {
+    width: 84px;
+    height: 84px;
+    background-color: #006699;
+    position: relative;
+    cursor: pointer;
+}
+
+.swatch-tt {
+    width: 250px;
+    height: 290px;
+    position: absolute;
+    top: -103px;
+    left: 84px;
+    z-index: 1000;
+    display: none;
+/*    -moz-box-shadow: 4px 3px 4px #ccc;
+    -webkit-box-shadow: 4px 3px 4px #ccc;
+    box-shadow: 4px 3px 4px #ccc;*/
+}
+
+
+.arrow-box {
+    position: relative;
+    background: #fff;
+    border: 1px solid #ededed;
+    width: 250px;
+    height: 290px;
+}
+.arrow-box:after, .arrow-box:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow-box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #ffffff;
+    border-width: 11px;
+    margin-top: -11px;
+}
+.arrow-box:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 12px;
+    margin-top: -12px;
+}
+
+/*row 1*/
+
+.swatch-116 {
+    background: url('../images/colorchart.png') -58px -116px no-repeat;
+}
+.swatch-567 {
+    background: url('../images/colorchart.png') -168px -116px no-repeat;
+}
+.swatch-545 {
+    background: url('../images/colorchart.png') -278px -116px no-repeat;
+}
+.swatch-574 {
+    background: url('../images/colorchart.png') -388px -116px no-repeat;
+}
+.swatch-541 {
+    background: url('../images/colorchart.png') -498px -116px no-repeat;
+}
+.swatch-543 {
+    background: url('../images/colorchart.png') -608px -116px no-repeat;
+}
+.swatch-671 {
+    background: url('../images/colorchart.png') -718px -116px no-repeat;
+}
+.swatch-658 {
+    background: url('../images/colorchart.png') -828px -116px no-repeat;
+}
+.swatch-921 {
+    background: url('../images/colorchart.png') -938px -116px no-repeat;
+}
+.swatch-917 {
+    background: url('../images/colorchart.png') -1048px -116px no-repeat;
+}
+
+
+.swatch-116-over {
+    background: url('../images/colorchart-big.png') -50px -46px no-repeat;
+}
+.swatch-567-over {
+    background: url('../images/colorchart-big.png') -278px -46px no-repeat;
+}
+.swatch-545-over {
+    background: url('../images/colorchart-big.png') -508px -46px no-repeat;
+}
+.swatch-574-over {
+    background: url('../images/colorchart-big.png') -738px -46px no-repeat;
+}
+.swatch-541-over {
+    background: url('../images/colorchart-big.png') -968px -46px no-repeat;
+}
+.swatch-543-over {
+    background: url('../images/colorchart-big.png') -1196px -46px no-repeat;
+}
+
+
+.swatch-671-over {
+    background: url('../images/colorchart-big.png') -50px -317px no-repeat;
+}
+.swatch-658-over {
+    background: url('../images/colorchart-big.png') -273px -317px no-repeat;
+}
+.swatch-921-over {
+    background: url('../images/colorchart-big.png') -496px -317px no-repeat;
+}
+.swatch-917-over {
+    background: url('../images/colorchart-big.png') -738px -317px no-repeat;
+}
+
+
+/*row 2*/
+
+.swatch-303 {
+    background: url('../images/colorchart.png') -58px -242px no-repeat;
+}
+.swatch-314 {
+    background: url('../images/colorchart.png') -168px -242px no-repeat;
+}
+.swatch-811 {
+    background: url('../images/colorchart.png') -278px -242px no-repeat;
+}
+.swatch-871 {
+    background: url('../images/colorchart.png') -388px -242px no-repeat;
+}
+.swatch-214 {
+    background: url('../images/colorchart.png') -498px -242px no-repeat;
+}
+.swatch-252 {
+    background: url('../images/colorchart.png') -608px -242px no-repeat;
+}
+.swatch-208 {
+    background: url('../images/colorchart.png') -718px -242px no-repeat;
+}
+.swatch-615 {
+    background: url('../images/colorchart.png') -828px -242px no-repeat;
+}
+.swatch-674 {
+    background: url('../images/colorchart.png') -938px -242px no-repeat;
+}
+.swatch-613 {
+    background: url('../images/colorchart.png') -1048px -242px no-repeat;
+}
+
+
+
+.swatch-303-over {
+    background: url('../images/colorchart-big.png') -968px -317px no-repeat;
+}
+.swatch-314-over {
+    background: url('../images/colorchart-big.png') -1196px -317px no-repeat;
+}
+
+
+.swatch-811-over {
+    background: url('../images/colorchart-big.png') -50px -582px no-repeat;
+}
+.swatch-871-over {
+    background: url('../images/colorchart-big.png') -278px -582px no-repeat;
+}
+.swatch-214-over {
+    background: url('../images/colorchart-big.png') -508px -582px no-repeat;
+}
+.swatch-252-over {
+    background: url('../images/colorchart-big.png') -738px -582px no-repeat;
+}
+.swatch-208-over {
+    background: url('../images/colorchart-big.png') -968px -582px no-repeat;
+}
+.swatch-615-over {
+    background: url('../images/colorchart-big.png') -1196px -582px no-repeat;
+}
+
+
+
+.swatch-674-over {
+    background: url('../images/colorchart-big.png') -968px -317px no-repeat;
+}
+.swatch-613-over {
+    background: url('../images/colorchart-big.png') -968px -317px no-repeat;
+}
+
+/*row 3*/
+
+.swatch-606 {
+    background: url('../images/colorchart.png') -58px -374px no-repeat;
+}
+.swatch-686 {
+    background: url('../images/colorchart.png') -168px -374px no-repeat;
+}
+.swatch-635 {
+    background: url('../images/colorchart.png') -278px -374px no-repeat;
+}
+.swatch-323 {
+    background: url('../images/colorchart.png') -388px -374px no-repeat;
+}
+.swatch-385 {
+    background: url('../images/colorchart.png') -498px -374px no-repeat;
+}
+.swatch-320 {
+    background: url('../images/colorchart.png') -608px -374px no-repeat;
+}
+.swatch-341 {
+    background: url('../images/colorchart.png') -718px -374px no-repeat;
+}
+.swatch-896 {
+    background: url('../images/colorchart.png') -828px -374px no-repeat;
+}
+.swatch-809 {
+    background: url('../images/colorchart.png') -938px -374px no-repeat;
+}
+
+
+/*row 4*/
+
+.swatch-211 {
+    background: url('../images/colorchart.png') -58px -498px no-repeat;
+}
+.swatch-250 {
+    background: url('../images/colorchart.png') -168px -498px no-repeat;
+}
+.swatch-202 {
+    background: url('../images/colorchart.png') -278px -498px no-repeat;
+}
+.swatch-205 {
+    background: url('../images/colorchart.png') -388px -498px no-repeat;
+}
+.swatch-701 {
+    background: url('../images/colorchart.png') -498px -498px no-repeat;
+}
+.swatch-759 {
+    background: url('../images/colorchart.png') -608px -498px no-repeat;
+}
+
+/*row 5 12 Brilliant Colors*/
+
+.swatch-116B {
+    background: url('../images/colorchart.png') -58px -693px no-repeat;
+}
+.swatch-545B {
+    background: url('../images/colorchart.png') -168px -693px no-repeat;
+}
+.swatch-574B {
+    background: url('../images/colorchart.png') -278px -693px no-repeat;
+}
+.swatch-686B {
+    background: url('../images/colorchart.png') -388px -693px no-repeat;
+}
+.swatch-671B {
+    background: url('../images/colorchart.png') -498px -693px no-repeat;
+}
+.swatch-917B {
+    background: url('../images/colorchart.png') -608px -693px no-repeat;
+}
+.swatch-314B {
+    background: url('../images/colorchart.png') -718px -693px no-repeat;
+}
+.swatch-385B {
+    background: url('../images/colorchart.png') -828px -693px no-repeat;
+}
+.swatch-896B {
+    background: url('../images/colorchart.png') -938px -693px no-repeat;
+}
+.swatch-252B {
+    background: url('../images/colorchart.png') -1048px -693px no-repeat;
+}
+
+
+.swatch-211B {
+    background: url('../images/colorchart.png') -58px -825px no-repeat;
+}
+.swatch-759B {
+    background: url('../images/colorchart.png') -168px -824px no-repeat;
+}
+
+/*row 7 6 Fluorescent Colors*/
+
+.swatch-502 {
+    background: url('../images/colorchart.png') -58px -1021px no-repeat;
+}
+.swatch-648 {
+    background: url('../images/colorchart.png') -168px -1021px no-repeat;
+}
+.swatch-604 {
+    background: url('../images/colorchart.png') -278px -1021px no-repeat;
+}
+.swatch-654 {
+    background: url('../images/colorchart.png') -388px -1021px no-repeat;
+}
+.swatch-304 {
+    background: url('../images/colorchart.png') -498px -1021px no-repeat;
+}
+.swatch-895 {
+    background: url('../images/colorchart.png') -608px -1021px no-repeat;
+}
+
+/*row 6 6 Iridescent Colors*/
+
+.swatch-020 {
+    background: url('../images/colorchart.png') -58px -1194px no-repeat;
+}
+.swatch-028 {
+    background: url('../images/colorchart.png') -168px -1194px no-repeat;
+}
+.swatch-022 {
+    background: url('../images/colorchart.png') -278px -1194px no-repeat;
+}
+.swatch-036 {
+    background: url('../images/colorchart.png') -388px -1194px no-repeat;
+}
+.swatch-029 {
+    background: url('../images/colorchart.png') -498px -1194px no-repeat;
+}
+.swatch-070 {
+    background: url('../images/colorchart.png') -608px -1194px no-repeat;
+}
+
+
+/*layout*/
+
+.tag-top, .link-top {
+    float:left;
+    margin-left: 30px;
+}
+
+.container-header {
+    background-color: #000;
+    height: 90px;
+    width: 100%;
+    color: #fff;
+}
+
+.hero-top {
+    background-color: #333;
+    height: 700px;
+    width: 100%;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.video-large {
+    background-color: #333;
+    height: 550px;
+    width: 100%;
+    background: url('../images/video-image.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.row-3 {
+    min-height: 1060px;
+}
+
+.row-3-header {
+    min-height: 160px;
+    padding: 20px 0;
+}
+
+.row-5 {
+    min-height: 500px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+    float: left;
+}
+
+.header-right {
+    margin-top: 35px;
+    float:right;
+}
+
+.text-hero {
+    margin-top: 150px;
+    max-width: 291px;
+}
+
+.text-hero-inner {
+    padding: 30px 0;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    min-height: 100px;
+}
+
+.footer .container {
+    padding-top: 32px;
+    font-size: 11px;
+}
+
+.copyright{
+    padding-top: 10px;
+}
+
 
 /* end bootstrap overrides*/
 
 /* custom classes*/
 
 
-.logo {
-    margin: 30px 0  30px 0;
-}
-
-.main-header {
-    margin: 15px 0  30px 0;
-}
-
-.lifestyle {
-    margin-top: 15px;
-}
-
-.sm {
-    font-size:11px;
-}
-
-.copyright {
-    line-height: 1.3;
-    padding-bottom: 15px;
-}
-
-.wheel {
-    display: block;
-    margin-top: 5px;
-}
-
-.wheel-sm {
-    display: none;
-}
 
 /* portrait and landscape */
 @media only screen
 and (max-width: 720px) {
-    .main-header {
-        margin: 15px 0;
+
+    .header-right {
+        float: none;
+        margin-top: 0;
     }
 
-    h2 {
-        font-size: 18px;
-        margin: 15px 0;
+    .link-top {
+        float: left;
+        margin: 22px 0 0 22px;
+    }
+    .tag-top {
+        float: left;
+        margin: 0 0 0 22px;
     }
 
-    .wheel {
-        display: none;
+
+
+    .text-hero {
+        margin: 60px auto;
+        max-width: 420px;
+        min-width: 320px;
+        width: 100%;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 3px;
+
     }
 
-    .wheel-sm {
-        display: block;
+    #button-swatches  {
+        margin: 10px auto;
+        clear: both;
+        float:none;
+        max-width: 250px;
+        height: 50px;
+    }
+
+
+    #container-swatches {
+        padding: 20px;
+    }
+
+
+    .buttons-down-below {
+        text-align: center;
+    }
+
+    .button-simple {
+        clear: both;
+        margin: 20px auto;
+    }
+
+    .button-simple-left {
+        float: none;
+    }
+
+    img.sample {
+        clear:both;
+        float:none;
+        margin: 20px auto;
+        max-width: 320px;
+    }
+
+    .social {
+        text-align: left;
+        clear: both;
+        margin: 20px 0;
     }
 
 }
@@ -97,9 +614,5 @@ and (min-width: 721px) and
 (max-width: 960px)
 {
 
-    h2 {
-
-        margin: 15px 0;
-    }
 
 }

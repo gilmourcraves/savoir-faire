@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Bootstrap CSS" pattern="file[SavoirFaire]:abstract/css/bootstrap/dist/css/*" />
+</component>
