@@ -7,6 +7,15 @@ $(document).ready(function(){
         $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
     });
 
+    $('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+
     $('.swatch').on('click', function(){
 
         $('.swatch').each(function(){
@@ -32,7 +41,7 @@ $(document).ready(function(){
     });
 
     $('#button-swatches').click(function(){
-        $('#container-swatches').toggle();
+        $('#container-swatches').fadeToggle();
 
     });
 

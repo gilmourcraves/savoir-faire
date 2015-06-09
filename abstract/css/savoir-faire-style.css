@@ -22,6 +22,12 @@ h3.features {
     font-size: 14px !important;
 }
 
+
+img.sample {
+    margin: 20px 0;
+}
+
+
 ul.arrow-red {
     list-style-type: none;
     margin: 0;
@@ -35,7 +41,7 @@ ul.arrow-red li {
 }
 
 #button-swatches  {
-    margin: 20px 15px;
+    margin: 40px 15px 0;
     cursor: pointer;
 }
 
@@ -99,7 +105,7 @@ ul.arrow-red li {
     float:none;
     margin: 20px 0;
     padding: 40px 20px;
-    border: 1px solid #ddd;
+/*    border: 1px solid #ddd;*/
     display: none;
 }
 
@@ -200,40 +206,6 @@ ul.arrow-red li {
 }
 
 
-.swatch-116-over {
-    background: url('../images/colorchart-big.png') -50px -46px no-repeat;
-}
-.swatch-567-over {
-    background: url('../images/colorchart-big.png') -278px -46px no-repeat;
-}
-.swatch-545-over {
-    background: url('../images/colorchart-big.png') -508px -46px no-repeat;
-}
-.swatch-574-over {
-    background: url('../images/colorchart-big.png') -738px -46px no-repeat;
-}
-.swatch-541-over {
-    background: url('../images/colorchart-big.png') -968px -46px no-repeat;
-}
-.swatch-543-over {
-    background: url('../images/colorchart-big.png') -1196px -46px no-repeat;
-}
-
-
-.swatch-671-over {
-    background: url('../images/colorchart-big.png') -50px -317px no-repeat;
-}
-.swatch-658-over {
-    background: url('../images/colorchart-big.png') -273px -317px no-repeat;
-}
-.swatch-921-over {
-    background: url('../images/colorchart-big.png') -496px -317px no-repeat;
-}
-.swatch-917-over {
-    background: url('../images/colorchart-big.png') -738px -317px no-repeat;
-}
-
-
 /*row 2*/
 
 .swatch-303 {
@@ -251,88 +223,57 @@ ul.arrow-red li {
 .swatch-214 {
     background: url('../images/colorchart.png') -498px -242px no-repeat;
 }
-.swatch-252 {
+.swatch-136 {
     background: url('../images/colorchart.png') -608px -242px no-repeat;
 }
-.swatch-208 {
+.swatch-252 {
     background: url('../images/colorchart.png') -718px -242px no-repeat;
 }
-.swatch-615 {
+.swatch-208 {
     background: url('../images/colorchart.png') -828px -242px no-repeat;
 }
-.swatch-674 {
+.swatch-615 {
     background: url('../images/colorchart.png') -938px -242px no-repeat;
+}
+.swatch-674 {
+    background: url('../images/colorchart.png') -1048px -242px no-repeat;
 }
 .swatch-613 {
     background: url('../images/colorchart.png') -1048px -242px no-repeat;
 }
 
 
-
-.swatch-303-over {
-    background: url('../images/colorchart-big.png') -968px -317px no-repeat;
-}
-.swatch-314-over {
-    background: url('../images/colorchart-big.png') -1196px -317px no-repeat;
-}
-
-
-.swatch-811-over {
-    background: url('../images/colorchart-big.png') -50px -582px no-repeat;
-}
-.swatch-871-over {
-    background: url('../images/colorchart-big.png') -278px -582px no-repeat;
-}
-.swatch-214-over {
-    background: url('../images/colorchart-big.png') -508px -582px no-repeat;
-}
-.swatch-252-over {
-    background: url('../images/colorchart-big.png') -738px -582px no-repeat;
-}
-.swatch-208-over {
-    background: url('../images/colorchart-big.png') -968px -582px no-repeat;
-}
-.swatch-615-over {
-    background: url('../images/colorchart-big.png') -1196px -582px no-repeat;
-}
-
-
-
-.swatch-674-over {
-    background: url('../images/colorchart-big.png') -968px -317px no-repeat;
-}
-.swatch-613-over {
-    background: url('../images/colorchart-big.png') -968px -317px no-repeat;
-}
-
 /*row 3*/
 
-.swatch-606 {
+.swatch-613 {
     background: url('../images/colorchart.png') -58px -374px no-repeat;
 }
-.swatch-686 {
+.swatch-606 {
     background: url('../images/colorchart.png') -168px -374px no-repeat;
 }
-.swatch-635 {
+.swatch-686 {
     background: url('../images/colorchart.png') -278px -374px no-repeat;
 }
-.swatch-323 {
+.swatch-635 {
     background: url('../images/colorchart.png') -388px -374px no-repeat;
 }
-.swatch-385 {
+.swatch-323 {
     background: url('../images/colorchart.png') -498px -374px no-repeat;
 }
-.swatch-320 {
+.swatch-385 {
     background: url('../images/colorchart.png') -608px -374px no-repeat;
 }
-.swatch-341 {
+.swatch-320 {
     background: url('../images/colorchart.png') -718px -374px no-repeat;
 }
-.swatch-896 {
+.swatch-341 {
     background: url('../images/colorchart.png') -828px -374px no-repeat;
 }
-.swatch-809 {
+.swatch-896 {
     background: url('../images/colorchart.png') -938px -374px no-repeat;
+}
+.swatch-809 {
+    background: url('../images/colorchart.png') -1048px -374px no-repeat;
 }
 
 
@@ -389,8 +330,6 @@ ul.arrow-red li {
 .swatch-252B {
     background: url('../images/colorchart.png') -1048px -693px no-repeat;
 }
-
-
 .swatch-211B {
     background: url('../images/colorchart.png') -58px -825px no-repeat;
 }
@@ -438,6 +377,210 @@ ul.arrow-red li {
 }
 .swatch-070 {
     background: url('../images/colorchart.png') -608px -1194px no-repeat;
+}
+
+/*over states*/
+
+
+.swatch-116-over {
+    background: url('../images/colorchart-big.png') -50px -46px no-repeat;
+}
+.swatch-567-over {
+    background: url('../images/colorchart-big.png') -278px -46px no-repeat;
+}
+.swatch-545-over {
+    background: url('../images/colorchart-big.png') -508px -46px no-repeat;
+}
+.swatch-574-over {
+    background: url('../images/colorchart-big.png') -738px -46px no-repeat;
+}
+.swatch-541-over {
+    background: url('../images/colorchart-big.png') -968px -46px no-repeat;
+}
+.swatch-543-over {
+    background: url('../images/colorchart-big.png') -1196px -46px no-repeat;
+}
+
+
+.swatch-671-over {
+    background: url('../images/colorchart-big.png') -50px -317px no-repeat;
+}
+.swatch-658-over {
+    background: url('../images/colorchart-big.png') -273px -317px no-repeat;
+}
+.swatch-921-over {
+    background: url('../images/colorchart-big.png') -496px -317px no-repeat;
+}
+.swatch-917-over {
+    background: url('../images/colorchart-big.png') -738px -317px no-repeat;
+}
+
+.swatch-303-over {
+    background: url('../images/colorchart-big.png') -968px -317px no-repeat;
+}
+.swatch-314-over {
+    background: url('../images/colorchart-big.png') -1196px -317px no-repeat;
+}
+
+
+.swatch-811-over {
+    background: url('../images/colorchart-big.png') -50px -582px no-repeat;
+}
+.swatch-871-over {
+    background: url('../images/colorchart-big.png') -278px -582px no-repeat;
+}
+.swatch-214-over {
+    background: url('../images/colorchart-big.png') -508px -582px no-repeat;
+}
+.swatch-136-over {
+    background: url('../images/colorchart-big.png') -738px -582px no-repeat;
+}
+.swatch-252-over {
+    background: url('../images/colorchart-big.png') -968px -582px no-repeat;
+}
+.swatch-208-over {
+    background: url('../images/colorchart-big.png') -1196px -582px no-repeat;
+}
+
+
+.swatch-615-over {
+    background: url('../images/colorchart-big.png') -50px -854px no-repeat;
+}
+.swatch-674-over {
+    background: url('../images/colorchart-big.png') -278px -854px no-repeat;
+}
+.swatch-613-over {
+    background: url('../images/colorchart-big.png') -508px -854px no-repeat;
+}
+.swatch-606-over {
+    background: url('../images/colorchart-big.png') -738px -854px no-repeat;
+}
+.swatch-686-over {
+    background: url('../images/colorchart-big.png') -968px -854px no-repeat;
+}
+.swatch-635-over {
+    background: url('../images/colorchart-big.png') -1196px -854px no-repeat;
+}
+
+.swatch-323-over {
+    background: url('../images/colorchart-big.png') -50px -1114px no-repeat;
+}
+.swatch-385-over {
+    background: url('../images/colorchart-big.png') -278px -1114px no-repeat;
+}
+.swatch-320-over {
+    background: url('../images/colorchart-big.png') -508px -1114px no-repeat;
+}
+.swatch-341-over {
+    background: url('../images/colorchart-big.png') -738px -1114px no-repeat;
+}
+.swatch-896-over {
+    background: url('../images/colorchart-big.png') -968px -1114px no-repeat;
+}
+.swatch-809-over {
+    background: url('../images/colorchart-big.png') -1196px -1114px no-repeat;
+}
+
+.swatch-211-over {
+    background: url('../images/colorchart-big.png') -50px -1378px no-repeat;
+}
+.swatch-250-over {
+    background: url('../images/colorchart-big.png') -278px -1378px no-repeat;
+}
+.swatch-202-over {
+    background: url('../images/colorchart-big.png') -508px -1378px no-repeat;
+}
+.swatch-205-over {
+    background: url('../images/colorchart-big.png') -738px -1378px no-repeat;
+}
+.swatch-701-over {
+    background: url('../images/colorchart-big.png') -968px -1378px no-repeat;
+}
+.swatch-759-over {
+    background: url('../images/colorchart-big.png') -1196px -1378px no-repeat;
+}
+
+/*row 5 12 Brilliant Colors*/
+
+.swatch-116B-over {
+    background: url('../images/colorchart-big.png') -50px -1644px no-repeat;
+}
+.swatch-545B-over {
+    background: url('../images/colorchart-big.png') -278px -1644px no-repeat;
+}
+.swatch-574B-over {
+    background: url('../images/colorchart-big.png') -508px -1644px no-repeat;
+}
+.swatch-686B-over {
+    background: url('../images/colorchart-big.png') -738px -1644px no-repeat;
+}
+.swatch-671B-over {
+    background: url('../images/colorchart-big.png') -968px -1644px no-repeat;
+}
+.swatch-917B-over {
+    background: url('../images/colorchart-big.png') -1196px -1644px no-repeat;
+}
+
+
+.swatch-314B-over {
+    background: url('../images/colorchart-big.png') -50px -1910px no-repeat;
+}
+.swatch-385B-over {
+    background: url('../images/colorchart-big.png') -278px -1910px no-repeat;
+}
+.swatch-896B-over {
+    background: url('../images/colorchart-big.png') -508px -1910px no-repeat;
+}
+.swatch-252B-over {
+    background: url('../images/colorchart-big.png') -738px -1910px no-repeat;
+}
+.swatch-211B-over {
+    background: url('../images/colorchart-big.png') -968px -1910px no-repeat;
+}
+.swatch-759B-over {
+    background: url('../images/colorchart-big.png') -1196px -1910px no-repeat;
+}
+
+/*row 7 6 Fluorescent Colors*/
+
+.swatch-502-over {
+    background: url('../images/colorchart-big.png') -50px -2175px no-repeat;
+}
+.swatch-648-over {
+    background: url('../images/colorchart-big.png') -278px -2175px no-repeat;
+}
+.swatch-604-over {
+    background: url('../images/colorchart-big.png') -508px -2175px no-repeat;
+}
+.swatch-654-over {
+    background: url('../images/colorchart-big.png') -738px -2175px no-repeat;
+}
+.swatch-304-over {
+    background: url('../images/colorchart-big.png') -968px -2175px no-repeat;
+}
+.swatch-895-over {
+    background: url('../images/colorchart-big.png') -1196px -2175px no-repeat;
+}
+
+/*row 6 6 Iridescent Colors*/
+
+.swatch-020-over {
+    background: url('../images/colorchart-big.png') -50px -2442px no-repeat;
+}
+.swatch-028-over {
+    background: url('../images/colorchart-big.png') -278px -2442px no-repeat;
+}
+.swatch-022-over {
+    background: url('../images/colorchart-big.png') -508px -2442px no-repeat;
+}
+.swatch-036-over {
+    background: url('../images/colorchart-big.png') -738px -2442px no-repeat;
+}
+.swatch-029-over {
+    background: url('../images/colorchart-big.png') -968px -2442px no-repeat;
+}
+.swatch-070-over {
+    background: url('../images/colorchart-big.png') -1196px -2442px no-repeat;
 }
 
 
@@ -553,6 +696,11 @@ and (max-width: 720px) {
         margin: 0 0 0 22px;
     }
 
+    ul.arrow-red {
+        list-style-type: none;
+        margin: 0 0 40px 0;
+        padding: 0;
+    }
 
 
     .text-hero {
