@@ -3,7 +3,10 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="TBD">
+    <meta name="description" content="Abstract by Sennelier is an innovative acrylic. This fine, high quality acrylic is packaged in France. The package itself is flexible, molding to your hand for effortless usability.">
+
+	<link rel="icon" href="http://savoirfaire.com/media/favicon/default/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://savoirfaire.com/media/favicon/default/favicon.ico" type="image/x-icon" />
 
 
     <title>Abstract Innovative Acrylic at Savoir Faire </title>
@@ -25,7 +28,7 @@
 
         <header>
             <img src="images/logo-savoir-faire.png" alt="Savoir Faire" class="logo" style="width: 60px; height: 60px; margin-top: 15px; float:left;" />
-            <div class="header-right"><div class="link-top"><a href="">Visit us at Savoirfaire.com</a></div> <div class="white tag-top">IMPORTERS OF FINE MATERIALS FOR THE ARTS</div></div>
+            <div class="header-right"><div class="link-top"><a href="http://www.savoirfaire.com" target="_blank">Visit us at Savoirfaire.com</a></div> <div class="white tag-top">IMPORTERS OF FINE MATERIALS FOR THE ARTS</div></div>
         </header>
         </div>
 
@@ -64,7 +67,7 @@
             <div class="container row-3">
                 <div class="row">
                     <div class="col-md-12 text-center row-3-header">
-                <h2>Allow us to Formally Introduce you to Abstract</h2>
+                <h2>Allow us to Formally Introduce you to abstract<sup>&reg;</sup></h2>
                 <h4>An Innovative Acrylic system in revolutionary packaging by Sennelier</h4>
                     </div>
                 </div>
@@ -259,34 +262,13 @@
         <div class="jumbotron">
             <div class="container row-5 text-center">
                 <h2 class="available">Available in Over 60 Locations</h2>
+                <p class="medium">Go to your favorite retailer to order abstract<sup>&reg;</sup> by Sennelier today!</p>
 
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-1"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                </div>
 
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-1"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-2 col-md-offset-1"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                    <div class="col-md-2"><img src="images/holder-blick.png" /></div>
-                </div>
 
                 <div class="row buttons-down-below">
-                    <div class="col-md-6"><div class="button-simple button-simple-left">FIND LOCATIONS NEAR ME</div></div>
-                    <div class="col-md-6"><a href="assets/abstract-brochure.pdf" class="button-simple" target="_blank">DOWNLOAD BROCHURE</a></div>
+
+                    <div class="col-md-12"><a href="assets/abstract_brochure_english.pdf" class="button-simple button-simple-center" target="_blank">DOWNLOAD BROCHURE</a></div>
                 </div>
 
             </div>
@@ -300,8 +282,8 @@
                     <div class="col-md-6"><div class="copyright">Savoir Faire 2015 &copy; All Rights Reserved. Questions? Visit <a href="http://www.savoirfaire.com" target="_blank">Savoirfaire.com</a></div></div>
                     <div class="col-md-6">
                         <div class="social">
-                            <i class="fa fa-facebook fa-2x"></i>
-                            <i class="fa fa-linkedin fa-2x"></i>
+                            <a href="https://www.facebook.com/pages/Savoir-Faire/79051781183" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/company/savoir-faire" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                             <i class="fa fa-twitter fa-2x"></i>
                         </div>
                     </div>

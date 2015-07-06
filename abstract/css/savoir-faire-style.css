@@ -7,7 +7,7 @@
 /* base style overrides */
 
 h2.available {
-    padding: 65px 0;
+    padding: 25px 0 4px;
 }
 
 h3.features {
@@ -37,7 +37,7 @@ ul.arrow-red {
 ul.arrow-red li {
     margin: 0;
     padding: 0 0 10px 16px;
-    background: url('../images/arrow-red.png')  no-repeat 0 4px;
+    background: url('../images/arrow-red.png')  no-repeat 0 5px;
 }
 
 #button-swatches  {
@@ -55,7 +55,7 @@ ul.arrow-red li {
 }
 
 .buttons-down-below {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .button-simple {
@@ -83,6 +83,10 @@ ul.arrow-red li {
     float: right;
 }
 
+.button-simple-center {
+    margin: 0 auto;
+}
+
 .social {
     color: #fff;
     text-align: right;
@@ -102,6 +106,11 @@ ul.arrow-red li {
     border: 1px solid #777;
 /*    color: #e40101;*/
 
+}
+
+
+.social a .fa {
+    color: #fff !important;
 }
 
 #container-swatches {
@@ -641,7 +650,7 @@ ul.arrow-red li {
 }
 
 .row-5 {
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .logo {
@@ -681,6 +690,12 @@ ul.arrow-red li {
     padding-top: 10px;
 }
 
+h2 sup {
+    vertical-align: top;
+    font-size: 0.4em;
+    line-height: 20px;
+    position: relative;
+}
 
 /* end bootstrap overrides*/
 
