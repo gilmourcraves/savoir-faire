@@ -19,6 +19,22 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic' rel='stylesheet' type='text/css'>
 
+
+	<!-- BEGIN GOOGLE ANALYTICS CODE -->
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-29018424-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- END GOOGLE ANALYTICS CODE -->
+
 </head>
 <body>
 
@@ -28,7 +44,7 @@
 
         <header>
             <img src="images/logo-savoir-faire.png" alt="Savoir Faire" class="logo" style="width: 60px; height: 60px; margin-top: 15px; float:left;" />
-            <div class="header-right"><div class="link-top"><a href="http://www.savoirfaire.com" target="_blank">Visit us at Savoirfaire.com</a></div> <div class="white tag-top">IMPORTERS OF FINE MATERIALS FOR THE ARTS</div></div>
+            <div class="header-right"><div class="link-top"><a href="http://savoirfaire.com/painting/painting-sennelier/abstract.html" target="_blank">Learn more about <strong>abstract</strong><sup>&reg;</sup> at savoirfaire.com</a></div> <div class="white tag-top">IMPORTERS OF FINE MATERIALS FOR THE ARTS</div></div>
         </header>
         </div>
 
@@ -45,7 +61,7 @@
                         <div class="text-hero">
                         <img src="images/logo-abstract.png" class="img-responsive" />
 
-                        <p class="white medium text-hero-inner">Abstract by Sennelier is an innovative
+                        <p class="white medium text-hero-inner"><strong>abstract</strong><sup>&reg;</sup> by Sennelier is an innovative
                             acrylic. This fine, high quality acrylic
                             is packaged in France. The package
                             itself is flexible, molding to your hand
@@ -67,7 +83,7 @@
             <div class="container row-3">
                 <div class="row">
                     <div class="col-md-12 text-center row-3-header">
-                <h2>Allow us to Formally Introduce you to abstract<sup>&reg;</sup></h2>
+                <h2>Allow us to Formally Introduce you to <span style="font-weight: 700">abstract</span><sup>&reg;</sup></h2>
                 <h4>An Innovative Acrylic system in revolutionary packaging by Sennelier</h4>
                     </div>
                 </div>
@@ -97,7 +113,7 @@
                 <div id="container-swatches">
 
                 <div class="row row-header">
-                    <div class="col-md-11 col-sm-11">36 SATIN COLORS</div>
+                    <div class="col-md-11 col-sm-11">36 SATIN FINISH COLORS</div>
                 </div>
 
                     <div class="row">
@@ -150,7 +166,7 @@
                     </div>
 
                     <div class="row row-header">
-                        <div class="col-md-11 col-sm-11">12 BRILLIANT COLORS</div>
+                        <div class="col-md-11 col-sm-11">12 HIGH-GLOSS COLORS</div>
                     </div>
                     <div class="row">
                         <div class="col-md-1 col-sm-1"><div class="swatch swatch-116B" data-colorid="116B"></div></div>
@@ -173,7 +189,7 @@
 
 
                     <div class="row row-header">
-                        <div class="col-md-11 col-sm-11">6 FLUORESCENT</div>
+                        <div class="col-md-11 col-sm-11">6 FLUORESCENT COLORS</div>
                     </div>
                     <div class="row">
                         <div class="col-md-1 col-sm-1"><div class="swatch swatch-502" data-colorid="502"></div></div>
@@ -185,7 +201,7 @@
                     </div>
 
                     <div class="row row-header">
-                        <div class="col-md-11 col-sm-11">6 IRIDESCENT</div>
+                        <div class="col-md-11 col-sm-11">6 IRIDESCENT COLORS</div>
                     </div>
                     <div class="row">
                         <div class="col-md-1 col-sm-1"><div class="swatch swatch-020" data-colorid="020"></div></div>
@@ -262,7 +278,12 @@
         <div class="jumbotron">
             <div class="container row-5 text-center">
                 <h2 class="available">Available in Over 60 Locations</h2>
-                <p class="medium">Go to your favorite retailer to order abstract<sup>&reg;</sup> by Sennelier today!</p>
+                <p class="medium">Email or call Savoir-Faire to find out where to purchase <strong>abstract</strong><sup>&reg;</sup>
+
+	                <br /><br />
+	                <a href="mailto:customerservice@savoirfaire.com">customerservice@savoirfaire.com</a><br />
+	                415.884.8090<br />
+	                Hours of operations: 8am - 5pm, Monday through Friday </p>
 
 
 
@@ -283,8 +304,8 @@
                     <div class="col-md-6">
                         <div class="social">
                             <a href="https://www.facebook.com/pages/Savoir-Faire/79051781183" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                            <a href="https://www.linkedin.com/company/savoir-faire" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-                            <i class="fa fa-twitter fa-2x"></i>
+                            <a href="https://instagram.com/savoir_faire_art/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                            <a href="https://www.pinterest.com/savoirfaire0136/" target="_blank"><i class="fa fa-pinterest fa-2x"></i></a>
                         </div>
                     </div>
 

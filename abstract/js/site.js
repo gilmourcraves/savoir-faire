@@ -7,6 +7,12 @@ $(document).ready(function(){
         $(this).html($(this).html().replace(/\s([^\s<]+)\s*$/,'&nbsp;$1'));
     });
 
+    var heroImage = $('.hero-top');
+    var randomNumber = Math.floor(Math.random() * 4) + 1;
+    var randomClass = 'hero-top-' + randomNumber;
+
+    $(heroImage).addClass(randomClass);
+
     $('.popup-youtube').magnificPopup({
         disableOn: 700,
         type: 'iframe',

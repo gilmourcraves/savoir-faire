@@ -1,0 +1,67 @@
+<!-- reference post:
+http://www.magentocommerce.com/boards/viewthread/14527/P120/
+-->
+
+
+<?php $_maincategorylisting=$this->getCurrentCategory()?>
+<?php $_categories=$this->getCurrentChildCategories()?>
+<?php $i=1; $dyk = rand(1, 6); ?>
+<?php $count = count($_categories); ?>
+<?php  //echo $count; ?>
+
+
+
+<div class="subcat-listing">
+	<div class="subcat-products2">
+		<?php foreach ($_categories as $_category):?>
+			<?php if($_category->getIsActive()): ?>
+				<?php $cur_category=Mage::getModel('catalog/category')->load($_category->getId()); ?>
+				<?php $layer = Mage::getSingleton('catalog/layer'); ?>
+				<?php $layer->setCurrentCategory($cur_category); ?>
+				<?php // if($_imageUrl=$this->getCurrentCategory()->getImageUrl()):?>
+				<?php
+				//echo $_imageUrl."<br />";
+				// actual path of image
+				//$imageUrl = Mage::getBaseDir('media').DS."catalog/category".DS.$cur_category->getThumbnail();
+				//echo $imageUrl."<br />";
+				//echo Mage::getBaseUrl('media').'catalog/category/';
+				// path of the resized image to be saved
+				// here, the resized image is saved in media/resized folder
+				//$imageResized = Mage::getBaseDir('media').DS."catalog/category".DS."resized".DS.$cur_category->getThumbnail();
+				//echo $imageResized."<br /><br />";
+				// resize image only if the image file exists and the resized image file doesn't exist
+				// the image is resized proportionally with the width/height 135px
+				// if (!file_exists($imageResized)&&file_exists($_imageUrl)) :
+				//     $imageObj = new Varien_Image($_imageUrl);
+				//     $imageObj->constrainOnly(TRUE);
+				//     $imageObj->keepAspectRatio(TRUE);
+				//     $imageObj->keepFrame(FALSE);
+				//     $imageObj->resize(300, 300);
+				//     $imageObj->save($imageResized);
+				// endif;
+				?>
+
+				<div class="productBox2">
+					<?php if($_category->getDescription() != "") { ?>
+						<p><?php echo $this->getDescription($_category);?></p>
+					<?php } else { ?>
+						<div class="productBox2Img">
+							<a href="<?php echo $this->getCategoryUrl($_category) ?>" title="<?php echo $this->htmlEscape($_category->getName()) ?>">
+								<img src="<?php echo Mage::getBaseUrl('media').'catalog/category/'.$cur_category->getThumbnail()  ?>" alt="<?php echo $this->htmlEscape($_category->getName()) ?>" "/></a>
+						</div>
+
+						<a href="<?php echo $this->getCategoryUrl($_category) ?>" title="<?php echo $this->htmlEscape($_category->getName()) ?>"><?php echo $this->htmlEscape($_category->getName()) ?></a>
+					<?php } ?>
+				</div><!-- productBox -->
+				<?php // endif; ?>
+
+			<?php endif; ?>
+
+			<?php $i++;?>
+			<?php // echo $i%3;?>
+		<?php endforeach; ?>
+	</div><!-- subcat products -->
+</div><!-- subcat listing -->
+
+
+<?php $layer->setCurrentCategory($_maincategorylisting); ?>

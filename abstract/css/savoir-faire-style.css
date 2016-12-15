@@ -4,6 +4,10 @@
   margin-bottom: 20px;
 }
 
+a, a:hover, a:active, a:focus {
+    outline: 0;
+}
+
 /* base style overrides */
 
 h2.available {
@@ -93,8 +97,8 @@ ul.arrow-red li {
 }
 
 .social .fa {
-    border: 1px solid #555;
-    border-radius: 3px;
+/*    border: 1px solid #555;
+    border-radius: 3px;*/
     margin: 0 5px;
     padding: 5px;
     width: 40px;
@@ -103,7 +107,7 @@ ul.arrow-red li {
 
 .social .fa:hover {
     cursor: pointer;
-    border: 1px solid #777;
+/*    border: 1px solid #777;*/
 /*    color: #e40101;*/
 
 }
@@ -609,6 +613,10 @@ ul.arrow-red li {
     font-size: 12px;
 }
 
+.link-top a:hover, .link-top a:active, .link-top a:focus {
+    text-decoration: none;
+}
+
 .container-header {
     background-color: #000;
     height: 90px;
@@ -620,7 +628,40 @@ ul.arrow-red li {
     background-color: #333;
     height: 700px;
     width: 100%;
-    background: url('../images/hero-image.jpg') no-repeat center center;
+    background: url('../images/hero-image-1.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-top-2 {
+    background-color: #333;
+    height: 700px;
+    width: 100%;
+    background: url('../images/hero-image-2.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-top-3 {
+    background-color: #333;
+    height: 700px;
+    width: 100%;
+    background: url('../images/hero-image-3.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero-top-4 {
+    background-color: #333;
+    height: 700px;
+    width: 100%;
+    background: url('../images/hero-image-4.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -720,7 +761,7 @@ and (max-width: 720px) {
 
     .link-top {
         float: left;
-        margin: 16px 0 0 22px;
+        margin: 10px 0 0 22px;
     }
     .tag-top {
         float: left;
