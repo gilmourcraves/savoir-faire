@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+
+    <style>
+        #survey-mobile {
+            display: none;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+
+        var utility = {
+            isMobile: function(){
+                if( /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    return 'true';
+                }
+            }
+        };
+
+
+
+        $(document).ready(function(){
+            if(utility.isMobile()){
+                $('.survey-anchor').click(function(e) {
+                    e.preventDefault();
+                    window.open('/survey-mobile.html','_blank');
+
+                });
+                $('#survey-mobile').show();
+                $('#survey-desktop').hide();
+                $('.container-survey p').css({'font-size':'3em'});
+            }
+        })
+
+    </script>
+</head>
+<body>
+
+<div id="logo_holder"><a id="site_logo" href="http://www.savoirfaire.com/" title="Savoir Faire" class="logo"><img src="http://www.savoirfaire.com/skin/frontend/savoir/default/images/logo_narrow.png" /></a></div>
+
+
+<h1>Survey</h1>
+
+
+
+<div style="margin: 0 auto;">
+    <p style="margin: 0;">&nbsp;</p>
+    <p style="margin-bottom: 5px;"><strong>Dear Watercolorist,</strong></p>
+    <p style="margin-bottom: 5px;">Thank you for testing the Fabriano Artistico sample watercolor paper included in Watercolor Magazine. Considered as a historical reference when it comes to paper making–with inventions such as the watermark, as well as both internal and external sizing–Fabriano is always looking at ways to achieve perfection.</p>
+    <p style="margin-bottom: 5px;">Please, answer <a style="color: #f00;" href="#survey">these quick (13) questions</a> and help know how they are doing with providing artists with the best watercolor paper. Each question is rated from the lowest statisfaction (1) to the highest (10). Do not hesitate to add your comments for each question.&nbsp; At the end of the survey, you will also be able to include any additional remarks.</p>
+    <p style="margin-bottom: 5px;">As a token of our gratitude, you will receive a Free pack of ten Artistico 11"x14", 140lbs CP Extra White.</p>
+    <p style="margin-bottom: 5px;">Please, make sure you leave your name, address and telephone number for shipping purposes, as well as your email in case of questions.</p>
+    <p style="margin-bottom: 5px;">Warm Regards,<br> Pierre Guidetti<br> <em>Co-Owner - Savoir-Faire</em><br> Exclusive Importer of the Fabriano Mill in the USA</p>
+    <br> <span id="survey"></span>
+
+    <div id="survey-mobile">
+        <a href="survey-mobile.html" target="blank">Take the Survey</a>
+    </div>
+
+    <div id="survey-desktop">
+        <script type="text/javascript">// <![CDATA[
+        (function(t,e,o,c){var n,s,a;t.SMCX=t.SMCX||[],e.getElementById(c)||(n=e.getElementsByTagName(o),s=n[n.length-1],a=e.createElement(o),a.type="text/javascript",a.async=!0,a.id=c,a.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/FX6vwoLHMuof_2B7ExJfnQzIeOPN0Z_2FufkWwt9mgTq1pQRaLeacOVtTg9G9hJc_2BK6H.js"].join(""),s.parentNode.insertBefore(a,s))})(window,document,"script","smcx-sdk");
+        // ]]></script>
+    </div>
+
+</div>
+
+
+</body>
+</html>

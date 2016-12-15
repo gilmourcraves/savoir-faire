@@ -1,0 +1,209 @@
+jQuery.noConflict();
+  jQuery(document).ready(function($) {
+    // Code that uses jQuery's $ can follow here.
+    if(window.location.href.indexOf("magento") != -1){ //detects if the site is in teh dev 'magento' directory, if we are live then it is not included.
+         var devSite = '/magento';
+    }
+//_________ dev vs. live _________\\
+	if($(".cms-index-index").length > 0) {
+		//$('.cms-index-index .main .std').after('<a class="slide-prev slider-btn"></a><a class="slide-next slider-btn"></a>')
+		$('.cms-index-index .main .std div').has('img').addClass('home-slide').append("<div class='slide-info'></div>");
+	    $('.cms-index-index .main .std').cycle({
+			fx: 'fade',
+			speed: 2000,
+			timeout: 10000,
+			slideExpr: '.home-slide',
+			before: onBefore
+		});
+		
+		$('#home_cta').before('<a class="slide-prev slider-btn"></a><a class="slide-next slider-btn"></a>').cycle({
+			fx: 'scrollHorz',
+			speed: 2000,
+			timeout: 0,
+			slideExpr: '.cta-group',
+			// pager:  '#slide_nav',
+			prev:    'a.slide-prev',
+                        next:    'a.slide-next',
+			manualTrump:   true
+		});
+	}
+		//console.log(window.location.pathname);
+		// $('.cms-index-index .main').hover(function() {
+		// 	$('a.slider-btn').fadeIn(200).css('display','block');
+		// }, function() {
+		// 	$('a.slider-btn').fadeOut(200);
+		// });
+//_________ /cycle _________\\
+	$('.trans').css('opacity', 0.6);
+//_________ /general opacity _________\\
+	//$('#nav > li.level-top:gt(0) a.level-top').on('click', function(e){
+        $('#nav a.level-top').on('click', function(e){
+		e.preventDefault();
+	//	var childUrl = $(this).next('ul').find('li:first a').attr('href');
+        
+	//	window.location = childUrl;
+	});
+	$('#nav li.level-top').hoverIntent(config);
+	$('#nav li.level-top').find('ul.level0:visible').prev('a').addClass('open');
+	var navItem = $('#nav ul.level0 > li'),
+	    itemCount = navItem.length;
+	    navItem.addClass('width-'+itemCount);
+            
+            
+//__________ Clone the nav items that need to be moved around _____________\\
+        $('#nav li.nav-4-2').clone().appendTo('#nav li.nav-4 ul.level0:nth-child(2)').addClass('nav-4-2-clone');
+        $('#nav li.nav-4-3').appendTo('#nav li.nav-4 ul.level0:nth-child(2)');
+
+
+//________ parent > child redirect _________\\
+	// $('li.parent.first ul').find('li.last').removeClass('last');
+	// $('li.parent.first ul').append('<li class="level1 last"><a href="http://'+window.location.host+devSite+'/products.html/"><span>View All Products</span></a></li>');
+	// $('.footerCol.products ul').append('<li><a href="http://'+window.location.host+devSite+'/products.html/">View All Products</a></li>');
+//_________ /nav adder _________\\
+	// $('li.parent.last ul').find('li.last').removeClass('last');
+	// $('li.parent.last ul').append('<li class="level1"><a href="http://'+window.location.host+devSite+'/contacts/"><span>Contact Us</span></a></li><li class="level1 last"><a href="http://'+window.location.host+devSite+'/news/"><span>News</span></a></li>');
+//_________ /nav adder _________\\
+	$('#features').find('.feature:nth-child(2)').addClass('middle').css('margin','0 12px');
+//_________ /feature classer _________\\
+	$('a.why-zip').on('click', function(){
+		$('#why_zip').slideToggle(300);
+		return false;
+	});
+//_________ /why zip _________\\
+        $('#linkBox').appendTo('li.quick-links');
+	$('li.quick-links').hover(
+            function () {
+                $('#linkBox').slideDown(100);
+            },
+            function () {
+                $('#linkBox').slideUp(500);
+            }           
+        );
+        
+        $('li.quick-links a.trigger').on('click', function(e){
+            e.preventDefault();    
+        });
+	
+	$('a.pop-trigger').on('click', function(){
+		$("html, body").animate({ scrollTop: 0 }, "fast");
+
+		$(this).next('div.pop-up').slideToggle(300);
+	});
+	
+	$('a.pop-close').on('click', function(){
+		$(this).parent().slideToggle(300);
+		return false;
+	});
+	
+	$("a.product-thumb").on('click', function(e){
+		e.preventDefault();
+                //target = $(this).parent().siblings('.productImage').children('div').attr('class');
+                //alert($(this));
+                $(this).next('div.modal-product').modal({
+		    opacity:65,
+		    overlayCss: {backgroundColor:"#efefef"},
+		    overlayClose:true
+		});
+	})
+        
+        $("a.product-link").on('click', function(e){
+		e.preventDefault();
+                $(this).parent().siblings('.productImage').children('div.modal-product').modal({
+		    opacity:65,
+		    overlayCss: {backgroundColor:"#efefef"},
+		    overlayClose:true
+		});
+	})
+        
+        $('.tableToggle').on('click', function(e){
+            $('#skuTableWrapper').slideToggle('slow');
+            $('.tableToggle a').toggleClass('on');
+            e.preventDefault();
+        });
+        
+        var activeLink = $('.cms-page-view h1').html();
+        var section = 0;
+        //console.log(activeLink);
+        //console.log(section);
+        
+        if(activeLink)
+        {
+            var activeLink = activeLink.replace(" ","-");
+            var activeLink = activeLink.replace("Rapha&euml;l","Raphael");
+        }
+        //var section = $('.cms-page-view h1').data('section');
+        
+        
+        if(activeLink == 'Sennelier') {
+            section = 0;
+        }
+        
+        if (activeLink == 'Isabey' || activeLink == 'Lascaux' || activeLink == 'Lama-Li') {
+            section = 1;
+        }
+        
+        //console.log(section);
+        
+        if ($('li.timeline a.' + activeLink)) {
+            //console.log('found');
+            $('li.timeline a.' + activeLink).parent().addClass('activeLink');
+        }
+        
+        function onAfter(curr, next, opts) {
+            var slideNum = opts.currSlide + 1;
+            var slideTotal = opts.slideCount;
+            console.log(slideTotal);
+            if ((slideNum - 1) == 0) {
+                $('#prev').hide();
+            } else {
+                $('#prev').show();
+            }
+            if (slideNum == slideTotal) {
+                $('#next').hide();
+            } else {
+                $('#next').show();
+            }
+        }
+       
+        $('#timelineWrapper').cycle({
+            timeout: 0,
+            prev: "#prev",
+            next: "#next",
+            fx: 'scrollHorz',
+            manualTrump: true,
+            startingSlide: section,
+            nowrap: 1,
+            slideExpr: '.timelineSection',
+            after: onAfter,
+        });
+        
+        
+        // Selectnox style change
+        $(".sort-by select").selectbox({
+            
+        });
+
+        
+	
+});
+//_________ /doc ready [no jquery can go out of this function] _________\\
+function onBefore() { 
+	var slide = jQuery(this), slideInfo = jQuery('.slide-info'), slideTitle = slide.children('h1'), slideDesc = slide.children('p');
+	slideTitle.fadeIn(1000, function(){
+		slideTitle.delay(9000).fadeOut();
+	});
+	slideDesc.delay(1000).fadeIn(1000, function(){
+		slideDesc.delay(8500).fadeOut();
+	});
+} 
+
+var config = {
+    over: slideDown,
+    timeout: 400,
+    out: slideUp,
+    sensitivity: 5,
+    interval: 300
+};
+
+function slideDown(){  jQuery(this).children('ul.level0').toggleClass('open').slideToggle(300); }
+function slideUp(){ jQuery(this).children('ul.level0').toggleClass('open').slideToggle(300); }
